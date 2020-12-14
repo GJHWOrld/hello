@@ -11,6 +11,9 @@ all: $(EXE)
 %.o : %.C
 	$(CXX) -c $< $(CPPFLAGS) -o $@
 
+%.o : %.cpp
+	$(CXX) -c $< $(CPPFLAGS) -o $@
+	
 
 $(EXE): $(EXE_OBJS)
 	$(CXX) $^ $(LDFLAGS) $(LIBS) -o $@
