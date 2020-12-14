@@ -1,7 +1,7 @@
 #include <iostream>
 
-int main()
+int main(int argv,char**)
 {
-  std::cout<<"HELLO World/n"<<std::endl;
+  std::cout<<"HELLO World ! By ggh /n"<<std::endl;
   return 0;
 }
